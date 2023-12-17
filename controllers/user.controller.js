@@ -13,8 +13,9 @@ module.exports.Register = async(req, res) => {
             email,
             gender,
             slot,
-            startDate,
         } = req.body;
+
+        const startDate=new Date()
 
         const newUser = new User ({
             firstName,
